@@ -30,7 +30,7 @@ Parameters:
 Resources:
     
 #EC2 Creation
-  IDX:
+  EC2InstanceType:
     Type: 'AWS::EC2::Instance'
     Properties:
       BlockDeviceMappings:
