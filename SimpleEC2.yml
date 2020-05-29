@@ -33,8 +33,6 @@ Resources:
   IDX:
     Type: 'AWS::EC2::Instance'
     Properties:
-      DisableApiTermination: !Ref DisableApiTermination
-      IamInstanceProfile: !Ref IamInstanceProfile
       BlockDeviceMappings:
         - DeviceName: /dev/xvda
           Ebs:
