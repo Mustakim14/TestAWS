@@ -30,7 +30,7 @@ Parameters:
 Resources:
     
 #EC2 Creation
-  EC2InstanceType:
+  EC2:
     Type: 'AWS::EC2::Instance'
     Properties:
       BlockDeviceMappings:
@@ -44,4 +44,4 @@ Resources:
           
       ImageId: !Ref LatestAmiId
       AvailabilityZone: us-east-1a
-      InstanceType: !Ref IndexerInstanceType
+      InstanceType: !Ref EC2InstanceType
